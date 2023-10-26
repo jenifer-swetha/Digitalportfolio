@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(108, 108, 148);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a flexible grid */
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(51, 161, 204, 0.2);
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+footer {
+    background-color: #141515;
+    color: #fff;
+    padding: 10px;
+}

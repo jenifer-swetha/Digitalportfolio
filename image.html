@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image jeni</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2%;
+            padding: 3%;
+           
+
+            
+  background-image: url("p.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .slideshow-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #prevBtn {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #prevBtn:hover {
+            background-color: #555;
+        }
+
+        #nextBtn {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: 10%;
+            cursor: pointer;
+        }
+
+        #nextBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO KIDS LEARNING!</h1>
+    </header>
+
+    <div class="slideshow-container">
+        <img class="mySlides" src="ab.jpg" alt="Image 1">
+        <img class="mySlides" src="123.jpg" alt="Image 2">
+        <img class="mySlides" src="fl.jpg" alt="Image 3">
+        <img class="mySlides" src="b9.jpg" alt="Image 3">
+        <img class="mySlides" src="bi.jpg" alt="Image 3">
+
+
+        <button id="prevBtn" onclick="plusSlides(-1)">Previous</button>
+        <button id="nextBtn" onclick="plusSlides(1)">Next</button>
+    </div>
+
+    <footer>
+        <button onclick="goBack()">Go Back</button>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+     <footer>
+        <p>&copy; 2023 Kids Learning images </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+body, h1, h2, p {
+    margin: 2;
+    padding: 1;
+}
+
+/* Apply a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Style the header and navigation menu */
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hero section */
+#hero {
+    text-align: center;
+    padding: 100px 0;
+    background: url('p.jpg') center/cover;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 36px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #328ee4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style the featured content section */
+#featured-content {
+    display: flex;
+    justify-content: 100px;
+    padding: 50px 0;
+    background-color: #f4d0d0;
+}
+
+.feature {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+/* Style the testimonials section */
+#testimonials {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.testimonial {
+    margin: 20px;
+}
+
+/* Style the newsletter section */
+#newsletter {
+    text-align: center;
+    padding: 50px 0;
+}
+
+form input[type="email"] {
+    padding: 10px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
